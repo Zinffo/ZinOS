@@ -15,6 +15,7 @@ IF "%M%"=="get disk size" GOTO DISK
 IF "%M%"=="get bios serialnumber" GOTO SERIALNUMBER
 IF "%M%"=="get cpu info" GOTO CPU
 IF "%M%"=="username" GOTO USR
+IF "%M%"=="reboot" GOTO rebootos
 echo Command dosent exist
 goto TERMINAL
 :shutdown
@@ -46,3 +47,6 @@ goto TERMINAL
 :USR
 echo %username%
 goto TERMINAL
+:rebootos
+wmic os where primary = 1 reboot
+goto TERMİNAL
