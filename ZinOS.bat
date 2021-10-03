@@ -20,7 +20,7 @@ goto TERMINAL
 :shutdown
 exit
 :help
-echo test
+echo The Commands Are username, get cpu info, get bios serialnumber, get disk size, cat /proc/cpuinfo, hostname, clear, ver, whoami, help, exit, shutdown
 goto TERMINAL
 :whoami
 echo %Username%
