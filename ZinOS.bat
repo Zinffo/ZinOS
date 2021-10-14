@@ -1,6 +1,7 @@
 @echo off
 TITLE ZinOS
 :TERMINAL
+prompt >>
 SET /P M=%username%@%computername%:~$ 
 IF "%M%"=="shutdown" GOTO shutdown
 IF "%M%"=="exit" GOTO shutdown
